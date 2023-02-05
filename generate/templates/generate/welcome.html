@@ -1,0 +1,35 @@
+{% extends 'generate/homepage_base.html' %}
+{% load static %}
+
+{% block sidebar %}
+<div class="blocks">
+    <div class="sidebar_block">
+        <div class="sidebar_block_wrap">
+            <p class="block-title">
+                Generate a love song or a poem
+            </p>
+            <p class="block-desc">
+                Lorem Ipsum is simply the printing and typesetting industry. Lorem Ipsum has been.
+            </p>
+            <a href="{% url 'login' %}" class="login-btn">
+                <button class="block-btn red_btn">
+                    Start
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="sidebar_block">
+        <div class="sidebar_block_wrap">
+            <p class="block-title">
+                Refer and get credits
+            </p>
+            <p class="block-desc">
+                Lorem Ipsum is simply the printing and typesetting industry. Lorem Ipsum has been.
+            </p>
+            <button class="block-btn blue_btn">
+                Copy referral link
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
